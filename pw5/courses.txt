@@ -1,0 +1,1 @@
+[{'name': 'ict', 'num_of_lessons': 12, 'course_id': '1'}, {'name': 'mes', 'num_of_lessons': 12, 'course_id': '2'}]
