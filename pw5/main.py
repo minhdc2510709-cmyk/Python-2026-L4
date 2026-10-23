@@ -8,11 +8,9 @@ def main():
     # 1. Kiểm tra và giải nén ngay khi khởi động
     if os.path.exists(DATA_FILE):
         print(f"Phát hiện {DATA_FILE}, đang giải nén dữ liệu...")
-        if os.path.exists(DATA_FILE):
-            print(f"Phát hiện {DATA_FILE}, đang giải nén dữ liệu...")
-            zipf = zipfile.ZipFile(DATA_FILE, 'r')
-            zipf.extractall(".")
-            zipf.close()
+        zipf = zipfile.ZipFile(DATA_FILE, 'r')
+        zipf.extractall(".")
+        zipf.close()
     print("--- QUẢN LÝ HỌC SINH ---")
     students = input_students()
 
